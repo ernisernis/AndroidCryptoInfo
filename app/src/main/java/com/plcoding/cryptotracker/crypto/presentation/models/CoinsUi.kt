@@ -6,7 +6,7 @@ import com.plcoding.cryptotracker.crypto.domain.Coin
 import com.plcoding.cryptotracker.util.getDrawableIdForCoin
 import java.util.Locale
 
-data class CoinsUi(
+data class CoinUi(
     val id: String,
     val rank: Int,
     val name: String,
@@ -22,8 +22,8 @@ data class DisplayableNumber(
     val formatted: String
 )
 
-fun Coin.toCoinUi(): CoinsUi {
-    return CoinsUi(
+fun Coin.toCoinUi(): CoinUi {
+    return CoinUi(
         id = id,
         name = name,
         symbol = symbol,

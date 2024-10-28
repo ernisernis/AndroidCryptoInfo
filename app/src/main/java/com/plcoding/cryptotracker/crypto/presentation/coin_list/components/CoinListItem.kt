@@ -25,7 +25,7 @@ import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.plcoding.cryptotracker.crypto.domain.Coin
-import com.plcoding.cryptotracker.crypto.presentation.models.CoinsUi
+import com.plcoding.cryptotracker.crypto.presentation.models.CoinUi
 import com.plcoding.cryptotracker.crypto.presentation.models.toCoinUi
 import com.plcoding.cryptotracker.ui.theme.CryptoTrackerTheme
 
@@ -33,7 +33,7 @@ import com.plcoding.cryptotracker.ui.theme.CryptoTrackerTheme
 @Composable
 fun CoinListItem(
     modifier: Modifier = Modifier,
-    coinsUi: CoinsUi,
+    coinsUi: CoinUi,
     onClick: () -> Unit,
 ) {
     val contentColor = if (isSystemInDarkTheme()) {
